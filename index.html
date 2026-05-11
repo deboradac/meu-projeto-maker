@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meu Projeto Maker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Meu Projeto Maker</h1>
+
+        <p>
+            Projeto criado para explorar cultura maker,
+            criatividade e publicação digital.
+        </p>
+
+        <h2>Tecnologias utilizadas</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <button id="btnMensagem">
+            Mostrar mensagem
+        </button>
+
+        <p id="mensagem"></p>
+
+        <hr>
+
+        <p>
+            Projeto inspirado nas aulas de cultura maker e ética digital.
+        </p>
+
+    </div>
+
+    <script>
+
+        document.getElementById("btnMensagem")
+            .addEventListener("click", () => {
+
+            document.getElementById("mensagem")
+                .textContent =
+                "Criar, compartilhar e evoluir faz parte da cultura maker!";
+        });
+
+    </script>
+
+</body>
+</html>
